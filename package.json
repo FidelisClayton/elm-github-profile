@@ -1,0 +1,17 @@
+{
+  "name": "elm-github",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --port=3000"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "file-loader": "^0.11.1",
+    "path": "^0.12.7",
+    "webpack-dev-server": "^2.4.2"
+  }
+}
