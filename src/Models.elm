@@ -9,21 +9,9 @@ type alias Model =
   , organizations: WebData (List User)
   }
 
-type alias Member =
-  { login: String
-  , avatar_url: String
-  , url: String
-  }
-
 type alias User =
   { login: String
-  , avatar_url: String
+  , avatarUrl: String
   , name: String
   , userType: String
-  }
-
-type alias Organization =
-  { login: String
-  , avatar_url: String
-  , url: String
   }

@@ -3,7 +3,7 @@ import Html.Attributes exposing (class)
 import RemoteData exposing (WebData)
 
 import Msgs exposing (Msg)
-import Models exposing (Model, User, Member)
+import Models exposing (Model, User)
 import User.View exposing (maybeUser, maybeOrganization, maybeMembers, formView)
 import Update exposing (update)
 
