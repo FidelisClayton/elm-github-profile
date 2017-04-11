@@ -22,5 +22,9 @@ A simple example to fetch users in Elm using the github api
 └── webpack.config.js
 ```
 
+### Install
+
+Run `npm install`
+
 ### Development
-Run `webpack-dev-server --port=3000` to start the development server on `localhost:3000`
+Run `npm start` to start the development server on `localhost:3000`
