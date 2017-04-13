@@ -1,11 +1,16 @@
 import Html exposing (Html, div)
-import Html.Attributes exposing (class)
+import Html.CssHelpers
 import RemoteData exposing (WebData)
 
 import Msgs exposing (Msg)
 import Models exposing (Model, User)
 import User.View exposing (maybeUser, maybeOrganization, maybeMembers, formView)
 import Update exposing (update)
+
+import HomeStyles
+
+{ class } =
+    Html.CssHelpers.withNamespace ""
 
 init : ( Model, Cmd Msg )
 init =
@@ -16,7 +21,7 @@ init =
 
 view : Model -> Html Msg
 view model =
-  div [ class "main" ]
+  div [ class [ HomeStyles.Main ] ]
       [ maybeUser model.user
       , maybeMembers model.members
       , maybeOrganization model.organizations
