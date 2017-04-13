@@ -17,7 +17,7 @@ import Models exposing (Model, User)
 userView : User -> Html Msg
 userView user =
   div [ class [ HomeStyles.User ] ]
-      [ img [ src user.avatarUrl, class [ HomeStyles.UserImage ] ] []
+      [ img [ src user.avatarUrl ] []
       , div [] [ text <| "github.com/" ++ user.login ]
       , div [] [ text user.name ]
       ]
@@ -60,7 +60,7 @@ memberView member =
     , href <| "https://github.com/" ++ member.login
     , target "blank"
     ]
-    [ img [ src member.avatarUrl, class [ HomeStyles.MemberImage ] ] [] ]
+    [ img [ src member.avatarUrl ] [] ]
 
 organizationView : User -> Html Msg
 organizationView organization =
@@ -68,7 +68,7 @@ organizationView organization =
     , href ("https://github.com/" ++ organization.login)
     , target "blank"
     ]
-    [ img [ src organization.avatarUrl, class [ HomeStyles.OrganizationImage ] ] [] ]
+    [ img [ src organization.avatarUrl ] [] ]
 
 organizationsView : List User -> Html Msg
 organizationsView organizations =
