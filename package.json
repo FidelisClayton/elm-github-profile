@@ -4,14 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --port=3000"
+    "start": "webpack-dev-server --port=3000",
+    "install": "elm-make"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "css-loader": "^0.28.0",
+    "elm-webpack-loader": "^4.3.0",
     "file-loader": "^0.11.1",
     "path": "^0.12.7",
+    "style-loader": "^0.16.1",
+    "webpack": "^2.3.3",
     "webpack-dev-server": "^2.4.2"
   }
 }
